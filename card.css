@@ -1,0 +1,35 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container >div {
+    display: inline-block;
+    padding-left: 20px;
+    margin: 5px;
+    border: 1px solid black;
+    width: 20%;
+    height: auto;
+    background-color: white;
+ba
+}
+
+.container div:hover {
+    box-shadow: 0 4px 6px blue;
+    background-color: lightblue;
+    border-radius: 10%;
+}
+
+.container h1{
+    text-shadow: 0 4px 6px black;
+    text-decoration-line: overline;
+    text-align: center;
+}
+
+.container p{
+    text-align: center;
+    color: black;
+}
+
+

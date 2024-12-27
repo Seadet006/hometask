@@ -1,0 +1,34 @@
+.container{
+    border: 1px solid gray;
+    display: grid;
+    /*grid-template-columns:200px auto auto auto 200px;/*auto xanani setrin sonuna kimi qoyur*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 300px 70px;
+    /*grid-column-gap:  10px; /*setirleri ayirir*/
+   /* grid-row-gap: 10px ; /*sutunlari ayirir*/
+    grid-gap: 10px; /*her ikisini ayirir*/
+    grid-template-areas: "a a a a a"
+                         "b c c c d"
+                         "b c c c d"
+                         "b x l l d"
+                         "e e e e e";
+    justify-content: center;
+}
+
+.container *{
+    border: 1px dashed purple;/*dashed qiriq-qiqriq xettdir*/
+    background-color: lightgreen;
+    border-radius: 10px;/*kenarlari oval edir*/
+}
+.block-1{grid-area: a;}
+.block-2{grid-area: b;}
+.block-3{grid-area: c;}
+.block-4{grid-area: d;}
+.block-5{grid-area: e;}
+.block-6{grid-area: x;}
+.block-7{grid-area: l;}
+/*[class^="blok-"]{
+    border: 1px dashed green;
+    background-color: lightgreen;
+    border-radius: 10px;
+}*/
